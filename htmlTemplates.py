@@ -37,7 +37,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://logowik.com/content/uploads/images/jp-morgan9803.jpg">
+        <img src="https://motionarray.imgix.net/preview-546591-HclT7PcxXjyf9tG7-large.jpg?w=660&q=60&fit=max&auto=format">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
