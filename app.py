@@ -57,10 +57,7 @@ def get_conversation_chain(vectorstore):
 def handle_userinput(user_question):
     response = st.session_state.conversation({'question': user_question})
     st.session_state.chat_history = response['chat_history']
-    print("Chat history:", st.session_state.chat_history)
-    for i, message in enumerate(st.session_state.chat_history):
-        print("\nuser template:", user_template)
-        print("\nmessage:", message.content)
+    for i, message in enumerate(reversed(st.session_state.chat_history)):
         if i % 2 == 0:
             st.write(user_template.replace(
                 "{{MSG}}", message.content), unsafe_allow_html=True)
